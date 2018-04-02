@@ -2,12 +2,15 @@
 
 <manifest>
 
-    <project path="device/lge/vee7" name="Vee7-Cyanogenmod13/device_lge_l7II" branch="cm-13.0" remote="github" />
-    <project path="vendor/lge/vee7" name="Vee7-Cyanogenmod13/vendor_lge_l7II" branch="cm-13.0" remote="github" />
-    <project path="kernel/lge/vee7" name="Vee7-Cyanogenmod13/lge-kernel-lproj" branch="cm-13.0" remote="github" />
-    <project path="hardware/ril-legacy" name="Vee7-Cyanogenmod13/android_hardware_ril-legacy" branch="cm-13.0" remote="github" />
-    <project path="hardware/qcom/display-caf" name="Vee7-Cyanogenmod13/android_hardware_qcom_display-caf" branch="cm-13.0" remote="github" />
-    <project path="hardware/qcom/gps" name="Vee7-Cyanogenmod13/android_hardware_qcom_gps" branch="cm-13.0" remote="github" />
-    <project path="hardware/qcom/media" name="Vee7-Cyanogenmod13/hardware_qcom_media" branch="lp5.1" remote="github" />
+    <!-- !!!WARNING!!! -->
+    <!-- DON'T USE THIS MANIFEST IN A TREE USED TO BUILD OTHER DEVICES -->
+    <remove-project path="hardware/qcom/gps" />
+    <project path="device/lge/vee7" name="MattRootCM/android_device_lge_vee7" revision="cm-13.0" remote="github" />
+    <project path="vendor/lge/vee7" name="MattRootCM/proprietary_vendor_lge_vee7" revision="cm-13.0" remote="github" />
+    <project path="kernel/lge/vee7" name="MattRootCM/android_kernel_lge_vee7" revision="cm-13.0" remote="github" />
+    <project path="hardware/ril-legacy" name="MattRootCM/android_hardware_ril-legacy" revision="cm-13.0" remote="github" />
+    <project path="hardware/qcom/display-caf" name="MattRootCM/android_hardware_qcom_display-caf" revision="cm-13.0" remote="github" />
+    <project path="hardware/qcom/gps" name="MattRootCM/android_hardware_qcom_gps" revision="cm-13.0" remote="github" />
+    <project path="hardware/qcom/media" name="MattRootCM/hardware_qcom_media" revision="lp5.1" remote="github" />
 
 </manifest>
